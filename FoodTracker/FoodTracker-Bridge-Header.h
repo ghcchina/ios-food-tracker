@@ -9,5 +9,4 @@
 #ifndef FoodTracker_Bridge_Header_h
 #define FoodTracker_Bridge_Header_h
 
-
 #endif /* FoodTracker_Bridge_Header_h */

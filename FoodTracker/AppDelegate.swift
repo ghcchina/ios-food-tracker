@@ -7,15 +7,22 @@
 //
 
 import UIKit
+import CocoaFramework
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var sharedLib: SwiftLib?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let lib = SwiftLib()
+        let result = lib.foo()
+        print("result=\(result)")
+        
+//        let staticLib = StaticLib()
+//        staticLib.foo()
         return true
     }
 
